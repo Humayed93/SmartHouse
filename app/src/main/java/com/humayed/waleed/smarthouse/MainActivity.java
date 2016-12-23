@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_powerSaving;
     String txtMsg_powerSaving = "8";
     Button btn_irrigationON;
-    String txtMsg_irrigationON = "9";
+    String txtMsg_irrigationON = "3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
