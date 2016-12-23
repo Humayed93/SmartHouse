@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/appbackground"
+    tools:context="com.humayed.waleed.smarthouse.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="165dp"
+        android:layout_marginEnd="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="50dp">
+
+        <Button
+            android:id="@+id/btn_ACON"
+            android:background="@drawable/acon"
+            android:textAllCaps="false"
+            android:paddingTop="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="AC ON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:paddingLeft="23dp" />
+
+        <Button
+            android:id="@+id/btn_AlarmON"
+            android:background="@drawable/alarmsystemon"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="Alarm ON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_LightsON"
+            android:background="@drawable/lightson"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="Lights ON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_irrigationAuto"
+            android:background="@drawable/irrigationsystemauto"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="Irrigation Auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:paddingLeft="0dp" />
+
+        <Button
+            android:id="@+id/btn_powerSaving"
+            android:background="@drawable/allloadsoff"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:text="Power Saving ON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="176dp"
+        android:layout_marginStart="176dp">
+
+        <Button
+            android:id="@+id/btn_ACOFF"
+            android:background="@drawable/acoff"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:text="AC OFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:paddingRight="15dp" />
+
+        <Button
+            android:id="@+id/btn_AlarmOFF"
+            android:background="@drawable/alarmsystemoff"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:text="Alarm OFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/btn_LightsOFF"
+            android:background="@drawable/lightsoff"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:text="Alarm OFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/btn_irrigationManual"
+            android:background="@drawable/irrigationsystemmanual"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:text="Irrigation Manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_irrigationON"
+            android:background="@drawable/irrigationsystemon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:text="Irrigation ON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:paddingRight="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>
