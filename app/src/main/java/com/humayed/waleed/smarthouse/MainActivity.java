@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    final String  txtPhoneNum = "5554";
+    final String  txtPhoneNum = "0567123154";
 
     Button btn_ACON;
     String txtMsg_ACON = "6";
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_ACON;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "AC ON");
             }
         });
         btn_ACOFF.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_ACOFF;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "AC OFF");
             }
         });
         btn_AlarmON.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_AlarmON;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Alarm ON");
             }
         });
         btn_AlarmOFF.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_AlarmOFF;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Alarm OFF");
             }
         });
         btn_LightsON.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_LightsON;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Lights ON");
             }
         });
         btn_LightsOFF.setOnClickListener(new View.OnClickListener() {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_LightsOFF;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Lights OFF");
             }
         });
         btn_irrigationAuto.setOnClickListener(new View.OnClickListener() {
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_irrigationAuto;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Irrigation Auto");
             }
         });
         btn_irrigationManual.setOnClickListener(new View.OnClickListener() {
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_irrigationManual;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Irrigation Manual");
             }
         });
         btn_powerSaving.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_powerSaving;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Power Saving ON");
             }
         });
         btn_irrigationON.setOnClickListener(new View.OnClickListener() {
@@ -137,19 +137,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phoneNumber = txtPhoneNum;
                 String message = txtMsg_irrigationON;
-                sendMessage(phoneNumber, message);
+                sendMessage(phoneNumber, message, "Irrigation ON");
             }
         });
     }
 
 
-    private void sendMessage(String phoneNumber,String message){
+    private void sendMessage(String phoneNumber, String message, String command){
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage (phoneNumber, null, message, null, null);
-            Toast.makeText(getApplicationContext(), "SMS Sent.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), command, Toast.LENGTH_LONG).show();
         } catch (Exception e){
-            Toast.makeText(getApplicationContext(), "SMS Fail. Please try again!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Command Fail. Please try again!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
     }
