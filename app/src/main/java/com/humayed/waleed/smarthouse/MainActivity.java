@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    final String  txtPhoneNum = "0555866510";
+    final String  txtPhoneNum = "5554";
 
     Button btn_ACON;
     String txtMsg_ACON = "6";
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_irrigationON;
     String txtMsg_irrigationON = "3";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
         btn_irrigationManual = (Button) this.findViewById(R.id.btn_irrigationManual);
         btn_powerSaving = (Button) this.findViewById(R.id.btn_powerSaving);
         btn_irrigationON = (Button) this.findViewById(R.id.btn_irrigationON);
+
+        //SmsR msg = new SmsR();
+        //msg.onReceive(getApplicationContext(),getIntent());
 
         btn_ACON.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,4 +153,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+
 }
