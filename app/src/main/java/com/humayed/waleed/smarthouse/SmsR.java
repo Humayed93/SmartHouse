@@ -31,7 +31,7 @@ public class SmsR extends BroadcastReceiver {
                 }
                 incomingNumber = smsMessage[i].getOriginatingAddress();
                 // 0595544545
-                if (incomingNumber.equals("+966567123154")) {
+                if (incomingNumber.equals("+966581988893")) {
                     String incomingMsg = smsMessage[i].getMessageBody();
                     displayToast(context, incomingMsg);
                     //displayToast(context, incomingNumber);
@@ -40,7 +40,7 @@ public class SmsR extends BroadcastReceiver {
         }
     }
     private void displayToast(Context context,String msg){
-        Toast.makeText(context,msg,Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,msg,Toast.LENGTH_LONG).show();
     }
 
 }

@@ -15,20 +15,20 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginRight="165dp"
-        android:layout_marginEnd="165dp"
+        android:layout_marginRight="452dp"
+        android:layout_marginEnd="452dp"
+        android:paddingLeft="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:paddingLeft="50dp">
+        android:layout_alignParentEnd="true">
 
         <Button
             android:id="@+id/btn_ACON"
             android:background="@drawable/acon"
             android:textAllCaps="false"
-            android:paddingTop="50dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp" />
 
         <TextView
             android:text="AC ON"
@@ -38,13 +38,16 @@
             android:textStyle="normal|bold"
             android:fontFamily="sans-serif"
             android:textColor="@android:color/black"
-            android:paddingLeft="23dp" />
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingLeft="20dp" />
 
         <Button
             android:id="@+id/btn_AlarmON"
             android:background="@drawable/alarmsystemon"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp" />
 
         <TextView
             android:text="Alarm ON"
@@ -54,13 +57,16 @@
             android:textStyle="normal|bold"
             android:fontFamily="sans-serif"
             android:textColor="@android:color/black"
-            android:paddingLeft="10dp" />
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingLeft="20dp" />
 
         <Button
             android:id="@+id/btn_LightsON"
             android:background="@drawable/lightson"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp" />
 
         <TextView
             android:text="Lights ON"
@@ -70,13 +76,16 @@
             android:textStyle="normal|bold"
             android:fontFamily="sans-serif"
             android:textColor="@android:color/black"
-            android:paddingLeft="10dp" />
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingLeft="30dp" />
 
         <Button
             android:id="@+id/btn_irrigationAuto"
             android:background="@drawable/irrigationsystemauto"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp" />
 
         <TextView
             android:text="Irrigation Auto"
@@ -86,13 +95,16 @@
             android:textStyle="normal|bold"
             android:fontFamily="sans-serif"
             android:textColor="@android:color/black"
-            android:paddingLeft="0dp" />
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingLeft="30dp" />
 
         <Button
             android:id="@+id/btn_powerSaving"
             android:background="@drawable/allloadsoff"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp" />
 
         <TextView
             android:text="Power Saving ON"
@@ -101,25 +113,28 @@
             android:id="@+id/textView5"
             android:textStyle="normal|bold"
             android:fontFamily="sans-serif"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingLeft="20dp" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="289dp"
+        android:layout_marginStart="289dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="176dp"
-        android:layout_marginStart="176dp">
+        android:layout_alignParentStart="true">
 
         <Button
             android:id="@+id/btn_ACOFF"
             android:background="@drawable/acoff"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="150dp" />
 
         <TextView
             android:text="AC OFF"
@@ -129,14 +144,15 @@
             android:textStyle="normal|bold"
             android:textColor="@android:color/black"
             android:textAlignment="center"
-            android:paddingRight="15dp" />
+            android:textSize="18sp"
+            android:paddingLeft="25dp" />
 
         <Button
             android:id="@+id/btn_AlarmOFF"
             android:background="@drawable/alarmsystemoff"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
 
         <TextView
             android:text="Alarm OFF"
@@ -146,14 +162,15 @@
             android:textStyle="normal|bold"
             android:textColor="@android:color/black"
             android:textAlignment="center"
-            android:paddingRight="10dp" />
+            android:textSize="18sp"
+            android:paddingLeft="25dp" />
 
         <Button
             android:id="@+id/btn_LightsOFF"
             android:background="@drawable/lightsoff"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
 
         <TextView
             android:text="Alarm OFF"
@@ -163,14 +180,15 @@
             android:textStyle="normal|bold"
             android:textColor="@android:color/black"
             android:textAlignment="center"
-            android:paddingRight="10dp" />
+            android:textSize="18sp"
+            android:paddingLeft="10dp" />
 
         <Button
             android:id="@+id/btn_irrigationManual"
             android:background="@drawable/irrigationsystemmanual"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
 
         <TextView
             android:text="Irrigation Manual"
@@ -179,14 +197,16 @@
             android:id="@+id/textView10"
             android:textStyle="normal|bold"
             android:textColor="@android:color/black"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingLeft="20dp" />
 
         <Button
             android:id="@+id/btn_irrigationON"
             android:background="@drawable/irrigationsystemon"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
 
         <TextView
             android:text="Irrigation ON"
@@ -196,7 +216,7 @@
             android:textStyle="normal|bold"
             android:textColor="@android:color/black"
             android:textAlignment="center"
-            android:paddingRight="15dp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
 </RelativeLayout>
