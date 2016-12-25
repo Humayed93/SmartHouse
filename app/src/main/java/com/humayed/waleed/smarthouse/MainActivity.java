@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    final String  txtPhoneNum = "0581988893"; // 0595544545
+    final String  txtPhoneNum = "0595544545";
 
     Button btn_ACON;
     String txtMsg_ACON = "6";
