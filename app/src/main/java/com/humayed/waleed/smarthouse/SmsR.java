@@ -30,6 +30,7 @@ public class SmsR extends BroadcastReceiver {
                     smsMessage[i] = SmsMessage.createFromPdu((byte[]) pdus[i]);
                 }
                 incomingNumber = smsMessage[i].getOriginatingAddress();
+                // 0595544545
                 if (incomingNumber.equals("+966567123154")) {
                     String incomingMsg = smsMessage[i].getMessageBody();
                     displayToast(context, incomingMsg);
